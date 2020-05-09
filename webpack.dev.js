@@ -61,11 +61,5 @@ module.exports = merge(common, {
         collapseWhitespace: false,
       },
     }),
-    new CopyWebpackPlugin([
-      {
-        from: "./src/img",
-        to: "./assets/img/[name].[ext]",
-      },
-    ]),
   ],
 });

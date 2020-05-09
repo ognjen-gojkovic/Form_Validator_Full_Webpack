@@ -20,4 +20,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: "./src/assets/img",
+        to: "./assets/img/[name].[ext]",
+      },
+    ]),
+  ],
 };
