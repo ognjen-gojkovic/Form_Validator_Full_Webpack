@@ -27,10 +27,10 @@ module.exports = merge(common, {
           {
             loader: "css-loader",
             options: {
-              modules: false,
-              //   modules: {
-              //     localIdentName: "[local]_[hash:base64:5]",
-              //   },
+              modules: true,
+              modules: {
+                localIdentName: "[local]_[hash:base64:5]",
+              },
             },
           },
         ],
